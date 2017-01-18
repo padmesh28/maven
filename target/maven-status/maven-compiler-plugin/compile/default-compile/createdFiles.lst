@@ -1,0 +1,5 @@
+com\padmesh\product\bo\ProductBOImpl.class
+com\padmesh\product\dao\ProductDAOImpl.class
+com\padmesh\product\dto\Product.class
+com\padmesh\product\bo\ProductBO.class
+com\padmesh\product\dao\ProductDAO.class
