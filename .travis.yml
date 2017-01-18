@@ -2,10 +2,9 @@
   "language": "java",
   "group": "stable",
   "dist": "precise",
-  "env": "JDK_Test=\"Oracle JDK7 [ant]\"",
-  "jdk": "oraclejdk7",
+  "jdk": "oraclejdk8",
   "script": [
-    "mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V"
+    "mvn install"
   ],
   "os": "linux"
 }
