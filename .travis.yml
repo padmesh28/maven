@@ -2,7 +2,7 @@
   "language": "java",
   "group": "stable",
   "dist": "precise",
-  "jdk": "oraclejdk8",
+  "jdk": "oraclejdk12",
   "script": [
     "mvn install"
   ],
