@@ -15,6 +15,7 @@ public class ProductDAOImplTest {
   Product product = new Product();
   product.setId(1);
   product.setName("Iphone");
+
   product.setDescription("its awesome");
   product.setPrice(800);
   dao.create(new Product());
