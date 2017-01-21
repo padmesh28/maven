@@ -1,1 +1,15 @@
-language: clojure
+language: java
+sudo: false
+install: true
+
+
+      
+jdk:
+  - oraclejdk8
+
+script:
+    # JaCoC  is  used to have code coverage, the agent has to be activated
+  - apm install linter-javac
+
+notifications:
+  email: false  
