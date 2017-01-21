@@ -4,7 +4,6 @@ install: true
 
 addons:
   sonarqube:
-    token:
       
 jdk:
   - oraclejdk8
@@ -20,3 +19,6 @@ cache:
 
 notifications:
   email: false
+  
+  
+  
