@@ -7,6 +7,6 @@
     "mvn package -Dmaven.test.skip=true"]
   "aftersucess":
      "bash <(curl -s https://codecov.io/bash)"
-  ,
+  
   "os": "linux"
 }
