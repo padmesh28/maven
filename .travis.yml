@@ -10,8 +10,7 @@ jdk:
 
 script:
     # JaCoC  is  used to have code coverage, the agent has to be activated
-  - mvn install org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar
-  - dev/lint-java
+    - dev/lint-java
 
 cache:
   directories:
