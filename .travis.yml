@@ -8,7 +8,7 @@ jdk:
   - oraclejdk8
 
 script:
-    # JaCoC  is  used to have code coverage,  agent has to be activated
+    # JaCoC  is  used to have code coverage,  agent has to be 
     - dev/lint-java
 
 cache:
