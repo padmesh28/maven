@@ -9,7 +9,7 @@ jdk:
 
 script:
     # JaCoC  is  used to have code coverage,  agent has to be activated
-    - mvn -Pkinesis-asl -Pmesos -Pyarn -Phive -Phive-thriftserver checkstyle:check
+    - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar checkstyle:check
 
 cache:
   directories:
