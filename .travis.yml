@@ -1,7 +1,7 @@
 language: java
 sudo: false
-install:   - build/mvn -T 4 -q -DskipTests -Pmesos -Pyarn -Phadoop-2.3 -Pkinesis-asl -Phive -Phive-thriftserver install
-
+install: True
+      
 addons:
   sonarqube:
       
@@ -9,7 +9,9 @@ jdk:
   - oraclejdk8
 
 script:
-    # JaCoC  is  used to have code coverage,  agent has to be 
+    # JaCoC  is  used to have code coverage,  agent has to be
+    - build/mvn -T 4 -q -DskipTests -Pmesos -Pyarn -Phadoop-2.3 -Pkinesis-asl -Phive -Phive-thriftserver install
+    
     - dev/lint-java
 
 cache:
