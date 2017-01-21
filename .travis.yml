@@ -1,6 +1,6 @@
 language: java
 sudo: false
-install: true
+install: mvn -T 4 -q -DskipTests -Pmesos -Pyarn -Phadoop-2.3 -Pkinesis-asl -Phive -Phive-thriftserver install
 
 addons:
   sonarqube:
