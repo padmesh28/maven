@@ -1,10 +1,6 @@
-
-
 <module name = "Checker">
     
 
     <property name="fileExtensions" value="java, properties, xml"/>
-    <module name="FileTabCharacter">
-        <property name="eachLine" value="true"/>
-    </module>
+
 </module>
