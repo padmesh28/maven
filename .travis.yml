@@ -5,7 +5,7 @@
   "jdk": "oraclejdk8",
   "script": [
     "mvn package -Dmaven.test.skip=true"]
-    "aftersucess:",
+  "aftersucess":
      "bash <(curl -s https://codecov.io/bash)"
   ,
   "os": "linux"
