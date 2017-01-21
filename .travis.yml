@@ -8,9 +8,6 @@ addons:
 jdk:
   - oraclejdk8
 
-script:
-    # JaCoC  is  used to have code coverage,  agent has to be activated
-    - dev/lint-java
 
 cache:
   directories:
