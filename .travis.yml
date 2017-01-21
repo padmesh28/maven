@@ -8,6 +8,8 @@ addons:
     packages:
       - xsltproc
       - xmlstarlet
+      - Xlint:cast
+
 
 
       
