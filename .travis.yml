@@ -1,7 +1,13 @@
 language: java
 sudo: false
-install:
-      - ext install javac-linter
+install: True
+
+
+addons:
+  apt:
+    packages:
+      - xsltproc
+      - xmlstarlet
 
 
       
