@@ -1,6 +1,6 @@
 language: java
 sudo: false
-install: True
+install: mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar checkstyle:check
 addons:
   sonarqube:
       
@@ -9,7 +9,7 @@ jdk:
 
 script:
     # JaCoC  is  used to have code coverage,  agent has to be activated
-    - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar checkstyle:check
+    - dev/lint-java
 
 cache:
   directories:
