@@ -6,7 +6,7 @@ addons:
   sonarqube:
     token:
       
- jdk:
+jdk:
   - oraclejdk8
 
 script:
