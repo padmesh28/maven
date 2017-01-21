@@ -1,7 +1,6 @@
 language: java
 sudo: false
-install: mvn -T 4 -q -DskipTests -Pmesos -Pyarn -Phadoop-2.3 -Pkinesis-asl -Phive -Phive-thriftserver install
-
+install: True
 addons:
   sonarqube:
       
@@ -10,7 +9,7 @@ jdk:
 
 script:
     # JaCoC  is  used to have code coverage,  agent has to be activated
-    - dev/lint-java
+    - mvn -Pkinesis-asl -Pmesos -Pyarn -Phive -Phive-thriftserver checkstyle:check
 
 cache:
   directories:
