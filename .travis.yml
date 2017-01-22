@@ -10,7 +10,7 @@ jdk:
 
 script:
     # JaCoC  is  used to have code coverage,  agent has to be
-    - mvn -T 4 -q -DskipTests -Pmesos -Pyarn -Phadoop-2.3 -Pkinesis-asl -Phive -Phive-thriftserver install sonar:sonar
+    -  mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar
     
     - dev/lint-java
 
