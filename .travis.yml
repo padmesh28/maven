@@ -12,7 +12,6 @@ script:
     # JaCoC  is  used to have code coverage,  agent has to be
     -  mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar
     
-    -  dev/lint-java test.java
 
 cache:
   directories:
