@@ -1,9 +1,9 @@
 package com.padmesh.product.dto;
 public class Product {
-	private int id;
-	private String name;
-	private String description;
-	private int price;
+private int id;
+private String name;
+private String description;
+private int price;
 	public int getId() {
 		return id;
 	}
